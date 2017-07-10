@@ -1,0 +1,96 @@
+.features-content {
+  margin-top: 45px;
+  margin-bottom: 22px;
+
+  &__features-row::after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+
+  &__features-row:not(:last-of-type) {
+    margin-bottom: 45px;
+  }
+
+  &__feature-item {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    min-width: 300px;
+  }
+
+  &__feature-item:nth-child(even) {
+    width: calc(50% - 12px);
+    margin-left: 12px;
+    padding: 0;
+  }
+
+  &__feature-icon {
+    height: 94px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  &__feature-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__feature-icon--quality::before {
+    width: 91px;
+    height: 91px;
+    background-image: svg-load('../icons/diamond-1.svg');
+  }
+
+  &__feature-icon--qr::before {
+    width: 99px;
+    height: 78px;
+    background-image: svg-load('../icons/invoice.svg');
+  }
+
+  &__feature-icon--sert::before {
+    width: 68px;
+    height: 90px;
+    background-image: svg-load('../icons/contract.svg');
+  }
+
+  &__feature-icon--approved::before {
+    width: 85px;
+    height: 94px;
+    background-image: svg-load('../icons/security.svg');
+  }
+
+  &__guarantee {
+    padding: 10px 30px 6px;
+    text-align: center;
+    background-color: #f8f3f5;
+    font-family: "Circe", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  &__feature-name {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  &__feature-description {
+    display: block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+  }
+}

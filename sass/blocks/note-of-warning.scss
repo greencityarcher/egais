@@ -1,0 +1,26 @@
+.note-of-warning {
+  position: relative;
+  padding: 15px 30px 12px 78px;
+  margin-bottom: 19px;
+  border: 2px solid #5b3077;
+  border-radius: 3px;
+
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 41px;
+    height: 35px;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: svg-load('../icons/warning.svg');
+  }
+}

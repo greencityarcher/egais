@@ -9,7 +9,7 @@ var inlinesvg = require("postcss-inline-svg");
 
 
 gulp.task('style', function(){
-  gulp.src("sass/egais.scss")
+  gulp.src("sass/new-style.scss")
   .pipe(plumber())
   .pipe(sass())
   .pipe(postcss([
